@@ -1,4 +1,5 @@
 import { Navbar, Nav, Container, Row, Card, Col, CardGroup } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 import './App.css';
 
@@ -9,7 +10,7 @@ function App() {
         <Container>
           <Navbar.Brand>Honolulu Hot Spots</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="">Home</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="turo">Car Rentals</Nav.Link>
             <Nav.Link href="about">About</Nav.Link>
           </Nav>
@@ -20,7 +21,8 @@ function App() {
           <div className="px-5 my-5">
             <Row className="gx-5">
               <Col lg={4} className="mb-5 mb-lg-0">
-                <h2 className='fw-bolder mb-0'>Beaches</h2>
+                <Link to="/beaches" className="sectionheader sectionheader__beaches"><h2 className='fw-bolder mb-0'>Beaches</h2></Link>
+                
               </Col>
               <Col lg={8}>
                 <Row className="gx-5 row-cols-1 row-cols-md-2">
@@ -45,7 +47,7 @@ function App() {
           <div className="px-5 my-5">
             <Row className="gx-5">
               <Col lg={4} className="mb-5 mb-lg-0">
-                <h2 className='fw-bolder mb-0'>Restaurants</h2>
+              <Link to="/beaches" className="sectionheader sectionheader__restaurants"><h2 className='fw-bolder mb-0'>Restaurants</h2></Link>
               </Col>
               <Col lg={8}>
                 <Row className="gx-5 row-cols-1 row-cols-md-2">
@@ -70,7 +72,7 @@ function App() {
           <div className="px-5 my-5">
             <Row className="gx-5">
               <Col lg={4} className="mb-5 mb-lg-0">
-                <h2 className='fw-bolder mb-0'>Venues</h2>
+              <Link to="/beaches" className="sectionheader sectionheader__venues"><h2 className='fw-bolder mb-0'>Venues</h2></Link>
               </Col>
               <Col lg={8}>
                 <Row className="gx-5 row-cols-1 row-cols-md-2">

@@ -9,13 +9,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Beaches from './pages/beaches';
 
 
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />}>
+      <Route path="/" element={<App />}>  
       </Route>
+      <Route path="beaches" element={<Beaches />} />
+   
+
+
     </Routes>
   </BrowserRouter>,
   document.getElementById('root')
